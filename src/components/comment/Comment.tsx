@@ -3,8 +3,13 @@ import {View, Text, StyleSheet} from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import colors from '../../theme/colors';
 import fonts from '../../theme/fonts';
+import {IComment} from '../../types/models';
 
-const Comment = ({comment}) => {
+interface ICommentProps {
+  comment: IComment;
+}
+
+const Comment = ({comment}: ICommentProps) => {
   return (
     <View style={styles.comment}>
       <Text style={styles.commentText}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, Text, View} from 'react-native';
 
 import styles from './styles';
 
@@ -10,8 +10,13 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Comment from '../comment/Comment';
+import {IPost} from '../../types/models';
 
-const FeedPost = ({post}) => {
+interface IFeedPost {
+  post: IPost;
+}
+
+const FeedPost = ({post}: IFeedPost) => {
   return (
     <View style={styles.post}>
       {/* Header */}
@@ -66,7 +71,7 @@ const FeedPost = ({post}) => {
         </View>
         {/* Likes */}
         <Text style={styles.text}>
-          Liked by <Text style={styles.bold}>AsenathJ</Text> and
+          Liked by <Text style={styles.bold}>JesusSaves</Text> and
           <Text style={styles.bold}> {post.nofLikes} others</Text>
         </Text>
         {/* PostDescription */}
@@ -77,9 +82,8 @@ const FeedPost = ({post}) => {
         {/*Comments */}
         <Text>View all {post.nofComments} comments</Text>
         {post.comments.map(comment => (
-          <Comment comment={ comment}/>
+          <Comment key={comment.id} comment={comment} />
         ))}
-        
 
         {/* Posted Date */}
         <Text>{post.createdAt}</Text>
