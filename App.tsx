@@ -23,16 +23,16 @@ const post = {
   comments: [
     {
       id: '1',
-      comment: 'Hello there',
+      comment: 'Hello there👋👋',
       user: {
-        username: 'vadimnotjustdev',
+        username: 'Asenathj',
       },
     },
     {
       id: '2',
-      comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. H',
+      comment: 'nice picture💕💕',
       user: {
-        username: 'vadimnotjustdev',
+        username: 'Humphrey',
       },
     },
   ],

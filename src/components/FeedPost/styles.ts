@@ -3,7 +3,7 @@ import colors from '../../theme/colors';
 import fonts from '../../theme/fonts';
 
 export default StyleSheet.create({
-  post: {},
+  post:{},
   image: {
     width: '100%',
     aspectRatio: 1,
@@ -43,13 +43,6 @@ export default StyleSheet.create({
   bold: {
     fontWeight: fonts.weight.bold,
   },
-  comment: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  commentText: {
-    color: colors.black,
-    lineHeight: 18,
-    flex: 1,
-  },
+ 
+ 
 });

@@ -9,6 +9,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Comment from '../comment/Comment';
 
 const FeedPost = ({post}) => {
   return (
@@ -75,13 +76,11 @@ const FeedPost = ({post}) => {
         </Text>
         {/*Comments */}
         <Text>View all {post.nofComments} comments</Text>
-        <View style={styles.comment}>
-          <Text style={styles.commentText}>
-            <Text style={styles.bold}> vadimhumphreyjustd</Text> Lorem Ipsum is
-            simply dummy text of
-          </Text>
-          <AntDesign name={'hearto'} style={styles.icon} color={colors.black} />
-        </View>
+        {post.comments.map(comment => (
+          <Comment comment={ comment}/>
+        ))}
+        
+
         {/* Posted Date */}
         <Text>{post.createdAt}</Text>
       </View>
