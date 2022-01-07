@@ -1,99 +1,56 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
-
 import React from 'react';
 import {
   SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
-  useColorScheme,
   View,
 } from 'react-native';
+import FeedPost from './src/components/FeedPost';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-import colors from './src/theme/colors';
-import fonts from './src/theme/fonts';
-import AntDesign from 'react-native-vector-icons/AntDesign';
-
-const Section: React.FC<{
-  title: string;
-}> = ({children, title}) => {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
+const post = {
+  id: '1',
+  createdAt: '15 December 2021',
+  image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg',
+  description:
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?',
+  user: {
+    image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
+    username: 'vadimnotjustdev',
+  },
+  nofComments: 11,
+  nofLikes: 33,
+  comments: [
+    {
+      id: '1',
+      comment: 'Hello there',
+      user: {
+        username: 'vadimnotjustdev',
+      },
+    },
+    {
+      id: '2',
+      comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. H',
+      user: {
+        username: 'vadimnotjustdev',
+      },
+    },
+  ],
 };
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <View>
-        <Text>
-          Hello
-          <AntDesign name="right" />
-        </Text>
-      </View>
+    <SafeAreaView style={styles.app}>
+      <ScrollView>
+        <FeedPost post={post} />
+      </ScrollView>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  app: {
+    flex: 1,
   },
 });
 
