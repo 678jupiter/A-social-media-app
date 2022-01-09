@@ -1,49 +1,11 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  View,
-} from 'react-native';
-import FeedPost from './src/components/FeedPost';
-
-const post = {
-  id: '1',
-  createdAt: '15 December 2021',
-  image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg',
-  description:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?',
-  user: {
-    image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
-    username: 'vadimnotjustdev',
-  },
-  nofComments: 11,
-  nofLikes: 33,
-  comments: [
-    {
-      id: '1',
-      comment: 'Hello there👋👋',
-      user: {
-        username: 'Asenathj',
-      },
-    },
-    {
-      id: '2',
-      comment: 'nice picture💕💕',
-      user: {
-        username: 'Humphrey',
-      },
-    },
-  ],
-};
+import {SafeAreaView, View, StatusBar, StyleSheet} from 'react-native';
+import HomeScreen from './src/screens/HomeScreen/HomeScreen';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.app}>
-      <ScrollView>
-        <FeedPost post={post} />
-      </ScrollView>
+      <HomeScreen />
     </SafeAreaView>
   );
 };
