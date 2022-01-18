@@ -1,5 +1,5 @@
-import React from 'react';
-import {Image, Text, View} from 'react-native';
+import React, {useState} from 'react';
+import {Image, Text, View, Pressable} from 'react-native';
 
 import styles from './styles';
 
@@ -11,12 +11,45 @@ import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Comment from '../comment/Comment';
 import {IPost} from '../../types/models';
+import DoublePressable from '../DoublePressable';
+import Carousel from '../Carousel';
+import VideoPlayer from '../VideoPlayer';
 
 interface IFeedPost {
   post: IPost;
 }
 
 const FeedPost = ({post}: IFeedPost) => {
+  const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
+  const [isLiked, setIsLiked] = useState(false);
+  const toggleDescriptionExpanded = () => {
+    setIsDescriptionExpanded(v => !v);
+  };
+  const toggleLike = () => {
+    setIsLiked(v => !v);
+  };
+  let lastTap = 0;
+  let content = null;
+  if (post.image) {
+    content = (
+      <DoublePressable onDoublePress={toggleLike}>
+        <Image
+          source={{
+            uri: post.image,
+          }}
+          style={styles.image}
+        />
+      </DoublePressable>
+    );
+  } else if (post.images) {
+    content = <Carousel images={post.images} onDoublePress={toggleLike} />;
+  } else if (post.video) {
+    content = (
+      <DoublePressable onDoublePress={toggleLike}>
+        <VideoPlayer uri={post.video} />
+      </DoublePressable>
+    );
+  }
   return (
     <View style={styles.post}>
       {/* Header */}
@@ -35,21 +68,19 @@ const FeedPost = ({post}: IFeedPost) => {
         />
       </View>
       {/* Content */}
-      <Image
-        source={{
-          uri: post.image,
-        }}
-        style={styles.image}
-      />
+      {content}
+
       {/* Footer */}
       <View style={styles.footer}>
         <View style={styles.iconContainer}>
-          <AntDesign
-            name={'hearto'}
-            size={24}
-            style={styles.icon}
-            color={colors.black}
-          />
+          <Pressable onPress={toggleLike}>
+            <AntDesign
+              name={isLiked ? 'heart' : 'hearto'}
+              size={24}
+              style={styles.icon}
+              color={isLiked ? colors.accent : colors.black}
+            />
+          </Pressable>
           <Ionicons
             name="chatbubble-outline"
             size={24}
@@ -75,9 +106,12 @@ const FeedPost = ({post}: IFeedPost) => {
           <Text style={styles.bold}> {post.nofLikes} others</Text>
         </Text>
         {/* PostDescription */}
-        <Text style={styles.text}>
+        <Text style={styles.text} numberOfLines={isDescriptionExpanded ? 0 : 3}>
           <Text style={styles.bold}>{post.user.username}</Text>{' '}
           {post.description}
+        </Text>
+        <Text onPress={toggleDescriptionExpanded}>
+          {isDescriptionExpanded ? 'less' : 'more'}
         </Text>
         {/*Comments */}
         <Text>View all {post.nofComments} comments</Text>
