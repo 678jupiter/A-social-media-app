@@ -13,7 +13,7 @@
     "nofLikes": 34,
     "comments": [
       {
-        "id": "1",
+        "id": "11",
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
@@ -21,7 +21,7 @@
         }
       },
       {
-        "id": "2",
+        "id": "12",
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
@@ -31,7 +31,7 @@
     ]
   },
   {
-    "id": "1",
+    "id": "22",
     "createdAt": "19 December 2021",
     "images": [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
@@ -48,7 +48,7 @@
     "nofLikes": 34,
     "comments": [
       {
-        "id": "1",
+        "id": "12",
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
@@ -56,7 +56,7 @@
         }
       },
       {
-        "id": "2",
+        "id": "13",
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
@@ -66,7 +66,7 @@
     ]
   },
   {
-    "id": "2",
+    "id": "13",
     "createdAt": "19 December 2021",
     "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
@@ -79,7 +79,7 @@
     "nofLikes": 34,
     "comments": [
       {
-        "id": "1",
+        "id": "14",
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
@@ -87,7 +87,7 @@
         }
       },
       {
-        "id": "2",
+        "id": "15",
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
@@ -97,7 +97,7 @@
     ]
   },
   {
-    "id": "3",
+    "id": "16",
     "createdAt": "19 December 2021",
     "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
@@ -110,7 +110,7 @@
     "nofLikes": 34,
     "comments": [
       {
-        "id": "1",
+        "id": "17",
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
@@ -118,7 +118,7 @@
         }
       },
       {
-        "id": "2",
+        "id": "18",
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
