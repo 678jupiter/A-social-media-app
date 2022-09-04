@@ -23,7 +23,7 @@ const Input = () => {
       <TextInput
         value={newComment}
         onChangeText={setNewComment}
-        placeholder="Write your comment..."
+        placeholder="Write your comment...."
         style={styles.input}
         multiline
       />
