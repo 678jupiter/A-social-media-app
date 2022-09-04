@@ -7,7 +7,7 @@
     "user": {
       "id": "u1",
       "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
-      "username": "vadimnotjustdev"
+      "username": "Humphrey_Dev"
     },
     "nofComments": 11,
     "nofLikes": 34,
@@ -17,7 +17,7 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
-          "username": "vadimnotjustdev"
+          "username": "Humphrey_Dev"
         }
       },
       {
@@ -25,7 +25,7 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
-          "username": "vadimnotjustdev"
+          "username": "Humphrey_Dev"
         }
       }
     ]
@@ -37,12 +37,13 @@
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg"    ],
+      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg"
+    ],
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
     "user": {
       "id": "u1",
       "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
-      "username": "vadimnotjustdev"
+      "username": "Humphrey_Dev"
     },
     "nofComments": 11,
     "nofLikes": 34,
@@ -52,7 +53,7 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
-          "username": "vadimnotjustdev"
+          "username": "Humphrey_Dev"
         }
       },
       {
@@ -60,7 +61,7 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
-          "username": "vadimnotjustdev"
+          "username": "Humphrey_Dev"
         }
       }
     ]
@@ -73,7 +74,7 @@
     "user": {
       "id": "u1",
       "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
-      "username": "vadimnotjustdev"
+      "username": "Humphrey_Dev"
     },
     "nofComments": 11,
     "nofLikes": 34,
@@ -83,7 +84,7 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
-          "username": "vadimnotjustdev"
+          "username": "Humphrey_Dev"
         }
       },
       {
@@ -91,7 +92,7 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
-          "username": "vadimnotjustdev"
+          "username": "Humphrey_Dev"
         }
       }
     ]
@@ -104,7 +105,7 @@
     "user": {
       "id": "u1",
       "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg",
-      "username": "vadimnotjustdev"
+      "username": "Humphrey_Dev"
     },
     "nofComments": 11,
     "nofLikes": 34,
@@ -114,7 +115,7 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
-          "username": "vadimnotjustdev"
+          "username": "Humphrey_Dev"
         }
       },
       {
@@ -122,7 +123,7 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
-          "username": "vadimnotjustdev"
+          "username": "Humphrey_Dev"
         }
       }
     ]
@@ -135,7 +136,7 @@
     "user": {
       "id": "u1",
       "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg",
-      "username": "vadimnotjustdev"
+      "username": "Humphrey_Dev"
     },
     "nofComments": 11,
     "nofLikes": 34,
@@ -145,7 +146,7 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
-          "username": "vadimnotjustdev"
+          "username": "Humphrey_Dev"
         }
       },
       {
@@ -153,7 +154,7 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": "u1",
-          "username": "vadimnotjustdev"
+          "username": "Humphrey_Dev"
         }
       }
     ]

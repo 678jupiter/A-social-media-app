@@ -8,7 +8,7 @@ import ProfileScreen from './src/screens/ProfileScreen';
 const App = () => {
   return (
     <SafeAreaView style={styles.app}>
-      <EditProfileScreen />
+      <HomeScreen />
     </SafeAreaView>
   );
 };

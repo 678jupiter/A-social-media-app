@@ -20,7 +20,7 @@ interface IFeedPost {
   isVisible: boolean;
 }
 
-const FeedPost = ({post,isVisible}: IFeedPost) => {
+const FeedPost = ({post, isVisible}: IFeedPost) => {
   const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
   const toggleDescriptionExpanded = () => {
@@ -103,7 +103,7 @@ const FeedPost = ({post,isVisible}: IFeedPost) => {
         </View>
         {/* Likes */}
         <Text style={styles.text}>
-          Liked by <Text style={styles.bold}>JesusSaves</Text> and
+          Liked by <Text style={styles.bold}>Mary</Text> and
           <Text style={styles.bold}> {post.nofLikes} others</Text>
         </Text>
         {/* PostDescription */}
